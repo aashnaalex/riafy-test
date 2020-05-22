@@ -9,7 +9,6 @@ function App() {
 
   const [Posts, setPosts] = useState([]);
   const [Comments, setComments] = useState([]);
-  const [Data, setData] = useState();
   useEffect(() => {
     
   
@@ -30,19 +29,20 @@ function App() {
             console.log("data", Comments)
         }).catch(err => {
             console.log(err)
-        })      
+        })
+      
   }, [])
   
   return (
     <div className="App">
       <Header></Header>
-      {Data.slice(0,30).map((post, index) => {
+      {Posts.map((post, index) => {
         
         return(
           <Feed key = {index} post = {post} ></Feed>
         )
       })}
-      <AiOutlineReload style = {{width: "20px", height: "20px", margin: "15px 50% 50px 50%"}} onClick = {() => {setData(Posts)}}></AiOutlineReload>
+      <AiOutlineReload style = {{width: "20px", height: "20px", margin: "15px 50% 50px 50%"}} onClick = {() => {setPosts(Posts)}}></AiOutlineReload>
     </div>
   );
 }
