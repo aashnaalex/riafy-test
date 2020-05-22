@@ -16,7 +16,7 @@ function Header () {
                <h2 style = {{fontFamily: "cursive", margin: "7px", flex: "10"}}>Instagram</h2>
                 <FiSend style = {{height: "20px", width: "20px", float: "right", margin: "15px", flex: "1", cursor: "pointer"}}></FiSend>
             </div>
-            <div style = {{backgroundColor: "lightgrey", height:"50px",width: "40%", bottom: "0",left: "30%", right: "30%", position: "fixed", display: "flex"}}>
+            <div style = {{backgroundColor: "lightgrey", height:"50px",width: "fit-content", bottom: "0",left: "35%", right: "30%", position: "fixed", display: "flex"}}>
                 <AiFillHome style = {{height: "20px", width: "20px",  marginTop: "15px", marginLeft: "15px" , cursor: "pointer"}}></AiFillHome>
                 <FiSearch style = {{height: "20px", width: "20px", marginLeft: "50px", marginTop: "15px", cursor: "pointer"}}></FiSearch>
                 <BsPlusSquare style = {{height:"20px", width: "20px", marginLeft: "50px", marginTop: "15px", cursor: "pointer"}}></BsPlusSquare>
